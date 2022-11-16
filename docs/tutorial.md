@@ -1166,7 +1166,13 @@
  # 申万指数成分股
  "index_component_sw"  # 申万指数成分股
  # 申万宏源研究-指数分析
- "index_analysis_sw"  # 申万宏源研究-指数分析
+ "index_analysis_daily_sw"  # 申万宏源研究-指数分析-日报表
+ "index_analysis_weekly_sw"  # 申万宏源研究-指数分析-周报表
+ "index_analysis_monthly_sw"  # 申万宏源研究-指数分析-月报表
+ "index_analysis_week_month_sw"  # 申万宏源研究-指数分析-周/月-日期序列
+ # 债券-信息查询结果
+ "bond_info_cm"  # 中国外汇交易中心暨全国银行间同业拆借中心-债券-信息查询结果
+ "bond_info_detail_cm"  # 中国外汇交易中心暨全国银行间同业拆借中心-债券-债券详情
 ```
 
 ## 案例演示

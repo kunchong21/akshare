@@ -4,6 +4,7 @@
 
 | AKShare 版本 | 旧接口名称                                       | 新接口名称                                       | 修改日期     |
 |------------|---------------------------------------------|---------------------------------------------|----------|
+| 1.7.82     | index_analysis_sw                           | index_analysis_daily_sw                     | 20220921 |
 | 1.7.27     | stock_em_qsjy                               | stock_qsjy_em                               | 20220921 |
 | 1.7.23     | futures_pig_info                            | futures_hog_info                            | 20220916 |
 | 1.7.23     | futures_pig_rank                            | futures_hog_rank                            | 20220916 |
@@ -33,6 +34,58 @@
 | 1.4.86     | fund_em_aum                                 | fund_aum_em                                 | 20220322 |
 
 ## 更新说明
+
+1.7.93 fix: fix sw_index_third_cons interface
+
+    1. 修复 sw_index_third_cons 接口
+
+1.7.92 fix: fix fund_portfolio_hold_em interface
+
+    1. 修复 fund_portfolio_hold_em 接口
+
+1.7.91 fix: fix futures_price_index_nh interface
+
+    1. 修复 futures_price_index_nh 接口时区对齐问题
+
+1.7.90 fix: fix stock_yjbb_em interface
+
+    1. 修复 stock_yjbb_em 接口
+
+1.7.89 fix: fix stock_zh_index_daily_tx interface
+
+    1. 修复 stock_zh_index_daily_tx 接口的索引问题
+
+1.7.88 fix: fix stock_news_em interface
+
+    1. 修复 stock_news_em 接口
+
+1.7.87 fix: fix macro_uk interface
+
+    1. 修复 macro_uk 所有接口
+
+1.7.86 fix: fix bond_info_cm interface
+
+    1. 修复 bond_info_cm 接口
+
+1.7.85 fix: fix stock_board_industry_hist_em interface
+
+    1. 修复 stock_board_industry_hist_em 接口
+
+1.7.84 add: add bond_info_cm interface
+
+    1. 新增 bond_info_cm 接口
+    2. 新增 bond_info_detail_cm_df 接口
+
+1.7.83 fix: fix macro_japan interface
+
+    1. 修复 macro_japan 相关接口
+
+1.7.82 fix: fix index_analysis_daily_sw interface
+
+    1. 重命名 index_analysis_sw 为 index_analysis_daily_sw 接口
+    2. 新增 index_analysis_weekly_sw 接口
+    3. 新增 index_analysis_monthly_sw 接口
+    4. 新增 index_analysis_week_month_sw 接口
 
 1.7.81 fix: fix macro_swiss_svme interface
 
@@ -1435,6 +1488,30 @@
     3. 修改 air_quality_hist 接口的请求日期格式，从 '2022-01-01' 为 '20220101'
 
 ## 版本更新说明
+
+1.7.93 fix: fix sw_index_third_cons interface
+
+1.7.92 fix: fix fund_portfolio_hold_em interface
+
+1.7.91 fix: fix futures_price_index_nh interface
+
+1.7.90 fix: fix stock_yjbb_em interface
+
+1.7.89 fix: fix stock_zh_index_daily_tx interface
+
+1.7.88 fix: fix stock_news_em interface
+
+1.7.87 fix: fix macro_uk interface
+
+1.7.86 fix: fix bond_info_cm interface
+
+1.7.85 fix: fix stock_board_industry_hist_em interface
+
+1.7.84 add: add bond_info_cm interface
+
+1.7.83 fix: fix macro_japan interface
+
+1.7.82 fix: fix index_analysis_daily_sw interface
 
 1.7.81 fix: fix macro_swiss_svme interface
 

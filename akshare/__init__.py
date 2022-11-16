@@ -2199,9 +2199,21 @@ amac_manager_cancelled_info # 中国证券投资基金业协会-信息公示-诚
 1.7.79 fix: fix macro_germany interface
 1.7.80 fix: fix stock_a_below_net_asset_statistics interface
 1.7.81 fix: fix macro_swiss_svme interface
+1.7.82 fix: fix index_analysis_daily_sw interface
+1.7.83 fix: fix macro_japan interface
+1.7.84 add: add bond_info_cm interface
+1.7.85 fix: fix stock_board_industry_hist_em interface
+1.7.86 fix: fix bond_info_cm interface
+1.7.87 fix: fix macro_uk interface
+1.7.88 fix: fix stock_news_em interface
+1.7.89 fix: fix stock_zh_index_daily_tx interface
+1.7.90 fix: fix stock_yjbb_em interface
+1.7.91 fix: fix futures_price_index_nh interface
+1.7.92 fix: fix fund_portfolio_hold_em interface
+1.7.93 fix: fix sw_index_third_cons interface
 """
 
-__version__ = "1.7.81"
+__version__ = "1.7.93"
 __author__ = "AKFamily"
 
 import sys
@@ -2212,6 +2224,14 @@ if sys.version_info < (3, 7):
 
 del sys
 
+"""
+债券信息查询
+"""
+from akshare.bond.bond_info_cm import (
+    bond_info_detail_cm,
+    bond_info_cm,
+    bond_info_cm_query,
+)
 
 """
 申万宏源研究-指数系列
@@ -2221,7 +2241,10 @@ from akshare.index.index_sw_research import (
     index_hist_sw,
     index_component_sw,
     index_min_sw,
-    index_analysis_sw,
+    index_analysis_daily_sw,
+    index_analysis_weekly_sw,
+    index_analysis_monthly_sw,
+    index_analysis_week_month_sw,
 )
 
 """
@@ -4022,7 +4045,7 @@ from akshare.stock.stock_zh_a_tick_tx_163 import (
 """
 新浪-指数实时行情和历史行情
 """
-from akshare.index.stock_zh_index_sina import (
+from akshare.index.index_stock_zh import (
     stock_zh_index_daily,
     stock_zh_index_spot,
     stock_zh_index_daily_tx,
