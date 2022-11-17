@@ -2213,7 +2213,7 @@ amac_manager_cancelled_info # 中国证券投资基金业协会-信息公示-诚
 1.7.93 fix: fix sw_index_third_cons interface
 """
 
-__version__ = "1.7.93"
+__version__ = "1.7.93.1"
 __author__ = "AKFamily"
 
 import sys
@@ -4439,3 +4439,53 @@ from akshare.futures.futures_daily_bar import (
     get_futures_daily,
     get_ine_daily,
 )
+
+"""
+行情按量排序
+"""
+from akshare.kunchong21.bond_zh_sina import (
+    bond_zh_hs_real
+)
+
+"""
+腾讯ticket 行情
+"""
+from akshare.kunchong21.stock_zh_a_ticket_tx import (
+    stock_zh_a_ticket_tx_js_last,
+    stock_zh_a_ticket_tx_js_last_current_date,
+)
+
+
+"""
+公司高管
+"""
+from akshare.kunchong21.stock_gsgg import (
+    stock_gsgg,
+)
+
+
+
+"""
+官方公告
+"""
+from akshare.kunchong21.stock_notice_sse_szsz_bse import (
+    stock_notice_report_bse,
+    stock_notice_report_szse,
+    stock_notice_report_sse_now,
+)
+
+"""
+ 股本结构，历年股本变动
+"""
+from akshare.kunchong21.stock_zh_f10_em import (
+    stock_f10_gbjg,
+    stock_f10_lngbbd,
+)
+
+"""
+    机构调研详细内容
+"""
+from akshare.kunchong21.stock_zh_jgdy_em import (
+    stock_zh_jgdy_detail_em,
+)
+
