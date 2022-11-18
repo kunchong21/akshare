@@ -56,7 +56,8 @@ def stock_zh_a_gdhs(symbol: str = "20210930") -> pd.DataFrame:
         r = requests.get(url, params=params)
         data_json = r.json()
         temp_df = pd.DataFrame(data_json["result"]["data"])
-        big_df = big_df.append(temp_df, ignore_index=True)
+        tmp_big_df = pd.concat([big_df, temp_df])
+        big_df = tmp_big_df
     big_df.columns = [
         "代码",
         "名称",
@@ -145,7 +146,9 @@ def stock_zh_a_gdhs_detail_em(symbol: str = "000002") -> pd.DataFrame:
         r = requests.get(url, params=params)
         data_json = r.json()
         temp_df = pd.DataFrame(data_json["result"]["data"])
-        big_df = big_df.append(temp_df, ignore_index=True)
+        tmp_big_df = pd.concat([big_df,temp_df])
+        big_df = tmp_big_df
+
     big_df.columns = [
         "代码",
         "名称",
